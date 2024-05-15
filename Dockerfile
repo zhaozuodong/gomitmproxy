@@ -4,6 +4,7 @@ WORKDIR /go/src/gomitmproxy
 
 COPY . .
 RUN export GOPROXY=https://goproxy.io,direct
+RUN go mod tidy
 RUN go build -o gomitmproxy cmd/main.go
 
 
