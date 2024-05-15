@@ -51,7 +51,7 @@ go build -o gomitmproxy cmd/main.go
 
 # docker 案例
 ```
-docker run -d --name gomitmproxy -p 8892:8892 zhaozuodong/gomitmporxy:latest ./gomitmporxy -v 1 -auth-username="test" -auth-password="test123" -downstream-proxy-url="socks5://127.0.0.1:8889" -use-local-ca-cert=true -kafka-topic="test-topic" -kafka-brokers="127.0.0.1:9192,127.0.0.1:9292,127.0.0.1:9392" -allow-tls-urls="/api/sns/v3/user/info,/api/sns/v4/note/user/posted"
+docker run -d --name gomitmproxy -p 8892:8892 zhaozuodong/gomitmproxy:latest ./gomitmporxy -v 1 -auth-username="test" -auth-password="test123" -downstream-proxy-url="socks5://127.0.0.1:8889" -use-local-ca-cert=true -kafka-topic="test-topic" -kafka-brokers="127.0.0.1:9192,127.0.0.1:9292,127.0.0.1:9392" -allow-tls-urls="/api/sns/v3/user/info,/api/sns/v4/note/user/posted"
 ```
 
 # # docker compose 案例
